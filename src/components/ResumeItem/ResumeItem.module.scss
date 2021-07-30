@@ -1,0 +1,36 @@
+.ResumeItem {
+	margin-bottom: 20px;
+
+	.row {
+		display: flex;
+		flex-flow: nowrap;
+		align-items: center;
+		justify-content: space-between;
+
+		margin-bottom: 0.3rem;
+	}
+
+	.main {
+		text-transform: initial;
+	}
+
+	.date,
+	.location {
+		font-size: pxrem(14);
+		margin-left: 60px;
+		white-space: nowrap;
+	}
+
+	.location {
+		margin-left: auto;
+	}
+
+	.position,
+	.location {
+		font-style: italic;
+	}
+
+	h1, h2, h3, p {
+		margin: 0;
+	}
+}
