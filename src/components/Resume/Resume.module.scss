@@ -2,7 +2,7 @@
 	position: relative;
 	max-width: 1200px;
 
-	margin: 0 auto;
+	margin: 15px auto;
 	padding: 2rem 1.5rem;
 	border-radius: 8px;
 
@@ -13,12 +13,16 @@
 	@media print {
 		font-size: 0.8rem;
 		box-shadow: none;
-	}
 
+		margin: 0;
+		padding: 0;
+	}
 
 	:global(.container) {
 		display: flex;
 		flex-flow: row nowrap;
+
+		height: 100%;
 	}
 
 	:global(.print-only) {
@@ -47,7 +51,7 @@
 
 	.sidebar {
 		flex: 0 1 190px;
-		padding: 30px 15px 30px 0;
+		padding: 5px 15px 30px 0;
 		border-right: 1px solid var(--color-blue);
 
 		.label {
@@ -74,7 +78,7 @@
 
 	.main {
 		flex: 1 1 0;
-		padding: 30px;
+		padding: 10px 30px;
 
 		ul {
 			margin: 10px 0;
@@ -84,7 +88,6 @@
 				margin-bottom: 5px;
 			}
 		}
-
 	}
 
 	section {
@@ -98,9 +101,13 @@
 		font-size: pxrem(36);
 	}
 
-	h2, h3 {
+	h2,
+	h3 {
 		color: var(--color-blue);
 		text-transform: uppercase;
 	}
+}
 
+@page {
+	margin: 1cm;
 }

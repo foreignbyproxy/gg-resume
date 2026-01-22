@@ -20,21 +20,21 @@ function Resume() {
 					<h1>{import.meta.env.VITE_NAME}</h1>
 					<>
 						{import.meta.env.VITE_EMAIL && (
-							<p>
+							<div>
 								<p className={styles["label"]}>Email:</p>
 								<a href={`mailto:${import.meta.env.VITE_EMAIL}`}>
 									{import.meta.env.VITE_EMAIL}
 								</a>
-							</p>
+							</div>
 						)}
 
 						{import.meta.env.VITE_PHONE && (
-							<p>
+							<div>
 								<p className={styles["label"]}>Phone:</p>
 								<a href={`tel:+1${import.meta.env.VITE_PHONE}`}>
 									{import.meta.env.VITE_PHONE}
 								</a>
-							</p>
+							</div>
 						)}
 
 						{import.meta.env.VITE_ADDRESS_1 && import.meta.env.VITE_ADDRESS_2 && (
@@ -46,7 +46,7 @@ function Resume() {
 						)}
 
 						{import.meta.env.VITE_LINKEDIN_URL && (
-							<p className={styles["linkedin"]}>
+							<div className={styles["linkedin"]}>
 								<p className={styles["label"]}>LinkedIn:</p>
 								<a
 									href={import.meta.env.VITE_LINKEDIN_URL}
@@ -55,11 +55,24 @@ function Resume() {
 								>
 									{import.meta.env.VITE_LINKEDIN_URL}
 								</a>
-							</p>
+							</div>
+						)}
+
+						{import.meta.env.VITE_WEBSITE && (
+							<div className={styles["linkedin"]}>
+								<p className={styles["label"]}>Website:</p>
+								<a
+									href={import.meta.env.VITE_WEBSITE as string}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									gregorygerard.me
+								</a>
+							</div>
 						)}
 
 						{import.meta.env.VITE_ENS_URL && import.meta.env.VITE_ENS_LABEL && (
-							<p className={styles["linkedin"]}>
+							<div className={styles["linkedin"]}>
 								<p className={styles["label"]}>ENS:</p>
 								<a
 									href={import.meta.env.VITE_ENS_URL}
@@ -68,7 +81,7 @@ function Resume() {
 								>
 									{import.meta.env.VITE_ENS_LABEL}
 								</a>
-							</p>
+							</div>
 						)}
 					</>
 				</div>
@@ -78,16 +91,16 @@ function Resume() {
 						<ResumeItem
 							main="Blue Laser Digital"
 							position="Lead Developer"
-							date="Oct 2017 - Current"
-							location="Columbus, Ohio"
+							date="Oct 2016 - Current"
+							location="Columbus, Ohio USA"
 						>
 							<ul>
 								<li>
-									Scope, plan and execute full-stack web solutions to meet
-									clients’ digital marketinggoals
+									Scope, plan and execute full-stack web solutions to meet our
+									clients’ business goals
 								</li>
 								<li>
-									Developed a variety of websites and applications using a several
+									Build and maintain over 100 projects using a variety of
 									platforms, frameworks, technologies and APIs
 								</li>
 								<li>
@@ -96,15 +109,15 @@ function Resume() {
 								<li>Improved development process through custom tooling</li>
 								<li>
 									Collaborated with design and SEO teams to effectively execute
-									website projects
+									projects
 								</li>
 							</ul>
 						</ResumeItem>
-						<ResumeItem
+						{/* <ResumeItem
 							main="Panorama22"
 							position="Founder"
 							date="Jan 2020 - Current"
-							location="Columbus, Ohio"
+							location=""
 						>
 							<ul>
 								<li>
@@ -116,24 +129,23 @@ function Resume() {
 									presence
 								</li>
 							</ul>
-						</ResumeItem>
+						</ResumeItem> */}
 					</section>
 
 					<section>
 						<h2>Technical Skills</h2>
-						<ul className="no-bullet">
+						<ul>
 							<li>
-								<strong>Languages:</strong> JavaScript, TypeScript, HTML, CSS, PHP
+								<strong>Languages:</strong> JavaScript, TypeScript, HTML, CSS, PHP,
+								Solidity
 							</li>
 							<li>
-								<strong>Frameworks/Libraries:</strong> React, Next.js, Gatsby, Vite,
-								Svelte, Jest, React Testing Library
+								<strong>Frameworks/Libraries:</strong> React, Next.js, Tailwind,
+								Chakra UI, Jest, React Testing Library, Apollo, Redux, XState
 							</li>
 							<li>
-								<strong>Other:</strong> Node, Firebase, Git, Github, Bitbucket,
-								CI/CD, WordPress, Drupal, Shopify, SASS, Google Cloud Platform,
-								Google Analytics, Google Tag Manager, Adobe Photoshop/Illustrator,
-								Figma
+								<strong>Other:</strong> Node.js, Git, Github, CI/CD, Figma, Google
+								Cloud Platform, Firebase, GraphQL, Ethers.js
 							</li>
 						</ul>
 					</section>
