@@ -7,7 +7,7 @@ import ResumeItem from '../ResumeItem/ResumeItem';
 function Resume() {
   const componentRef = useRef(null);
   const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
+    contentRef: componentRef,
   });
 
   return (
