@@ -2,11 +2,9 @@
 
 **GitHub:** [@foreignbyproxy](https://github.com/foreignbyproxy) in [block-renovation](https://github.com/block-renovation)
 
-## Overview
+## LinkedIn
 
-- Repos contributed to: 11
-- PRs merged: 542
-- Date range: Feb 2022 – Apr 2026
+Full-stack engineer on a small, high-output team building a marketplace platform connecting property owners with contractors for residential and commercial renovations and new builds. Quickly grew from L3 engineer to senior tech lead touching every layer of the product, from core platform features and third-party integrations to developer tooling, analytics infrastructure, SEO and internal tools. Led the engineering effort for a major business pivot, contributed to an agentic chat experience, and improved platform reliability, developer experience, and data quality.
 
 ## Resume Bullets
 
@@ -33,8 +31,54 @@
 - Delivered the end-to-end Change Orders feature across web, mobile (React Native), and admin portal — enabling contractors to create, document, and collect payment for out-of-scope work
 - Maintained SEO infrastructure including JSON-LD schema, sitemap generation for contractor profiles and customer galleries, and a Contentful A/B testing framework
 
+## Major Contributions
+- Migrated WordPress blog to HubSpot with custom theme and Github Action based build process
+- Built programmatic SEO pages using AI generated content and proprietary data 
+- Led engineering effort for a business pivot from high-touch renovation service company to marketplace model that matches property owners to contractors
+- Architected the system to match property owners to multiple contractors
+- Implemented marketing website redesign with Contentful CMS refactor to enable the marketing team to self-serve content updates and launch A/B tests
+- Maintained Saleforce 2-way data sync to provide Sales team with realtime data updates 
+- Major Calendly integration refactor
+- Supported major market expansion efforts from several markets to nation-wide coverage and BuildZoom integration
+- Implemented change order revamp across contractor dashboard, admin portal and React Native contractor app 
+- Maintained platform dependencies and performed critical system upgrades that improved developer experience and reduced deploy cycle time by 20% 
+- Implemented contractor organization onboarding screens to reduce onboarding and reduce the time to first work order
+- Improved system monitoring with custom dashboards, improved Datadog log ingest and Sentry integration
+- Designed and implemented phone and email verification process to reduce spam leads 
+- Implemented contractor review scraping process to populate contractor profiles on Block properties
+- Migrated Segment and Google destination to use first-party domain to improve analytics data quality
+- Built frontend tool visual components for agentic chat experience
+- Refactored design system so that agents could easy understand and implement rules
+- Implemented contractor pipeline UI replacing a fragmented multi-stage UX with a single project pipeline view
+- Implemented "Activity Log" system to help internal users to understand key actions and milestones on a project
+- Updated PNPM workspace for better dependency management across a large monorepo which help prevent a supply chain attack
 
-## PR Volume by Repo
+## Other Highlights
+- Worked fully remote on a globally distriubuted team
+- Hired a Software Engineer L3 in Feb 2022
+- Became Tech Lead on Growth squad
+- Promoted to Senior Software Engineer in 2023  
+
+## Technologies
+- **Languages & Frameworks:** TypeScript, JavaScript, React, Next.js, React Native, Node.js, GraphQL
+- **CMS & Marketing:** Contentful, HubSpot
+- **Analytics & Data:** Segment, Google Analytics, Mixpanel, Snowflake, Google Tag Manager
+- **CRM & Sales:** Salesforce
+- **Email & Messaging:** Customer.io, Stream Chat
+- **Monitoring & Observability:** Datadog, Sentry
+- **CI/CD & Infrastructure:** GitHub Actions, CircleCI, AWS, Docker, PNPM
+- **Payments:** Stripe
+- **Feature Flags:** LaunchDarkly
+- **Testing:** Playwright, Cypress
+- **Other:** Twilio, Calendly, OpenAI
+
+## Code Contributions
+
+### Overview
+- Repos contributed to: 11
+- PRs merged: 542
+- Date range: Feb 2022 – Apr 2026
+- PR Volume by Repo
 
 | Repo | PRs Merged |
 |------|------------|
@@ -50,9 +94,9 @@
 | docker-block-api | 1 |
 | docker-block-admin-ci-builder | 1 |
 
-## By Repository
+### By Repository
 
-### block-mono (369 PRs)
+#### block-mono (369 PRs)
 
 - **2022-07-20** #4020 BLOCK-4561 - Add user properties to improve Facebook event matching
 - **2022-08-25** #4170 Release/release v2.235.0
@@ -424,7 +468,7 @@
 - **2026-04-23** #13655 HIRE-6777 - Icons for Design System
 - **2026-04-24** #13659 [HIRE-6792] Remove UpdateCrmAnswersForPricingEngineUseCase
 
-### block-hubspot (56 PRs)
+#### block-hubspot (56 PRs)
 
 - **2022-06-02** #43 Feature/BLOCK-4419 - Eventbrite module
 - **2022-08-11** #45 Block 4457 - Hubspot DX Improvement
@@ -483,7 +527,7 @@
 - **2026-02-25** #194 Adjustments
 - **2026-03-25** #200 [HIRE-6486] Update Resources dropdown CSS to place first 3 items in column 1
 
-### block-web (56 PRs)
+#### block-web (56 PRs)
 
 - **2022-08-19** #3009 BLOCK-4596 - Refactor VideoPlayer to use <source>
 - **2022-08-23** #3011 BLOCK-4596 - Refactor ProductHeroVideo video element
@@ -542,7 +586,7 @@
 - **2024-05-08** #6231 HIRE-122 - Implement RenovateConfidentlyCTA
 - **2024-05-09** #6233 HIRE-5 - Design QA
 
-### block-native (20 PRs)
+#### block-native (20 PRs)
 
 - **2024-01-09** #1635 GROW-1273 - Main Contractor Preference page
 - **2024-02-22** #1699 GROW-1851 - Update Work Order acceptance flow for missing homeowner availability
@@ -565,7 +609,7 @@
 - **2026-01-07** #2175 [HIRE-5848] Update to pnpm v10.27.0
 - **2026-01-08** #2176 HIRE-5848 - Update pnpm config
 
-### block-admin (19 PRs)
+#### block-admin (19 PRs)
 
 - **2024-03-08** #3734 GROW-2025 - Add REMOVE/LOST WO status
 - **2025-02-28** #3917 HIRE-2713 - Add Export PDF for published proposals
@@ -587,7 +631,7 @@
 - **2026-01-20** #3975 [HIRE-5528] Update to Node24
 - **2026-04-15** #3990 HIRE-6670 - Add "Start New Project" button to admin
 
-### block-iac (12 PRs)
+#### block-iac (12 PRs)
 
 - **2024-01-18** #49 Add update-project-status handler
 - **2024-12-11** #79 Adjust arguments for sync-user-account
@@ -602,27 +646,27 @@
 - **2026-04-08** #92 Add Katie Salmon to the list of planners
 - **2026-04-10** #93 Update planners
 
-### docker-block-api-ci-builder (3 PRs)
+#### docker-block-api-ci-builder (3 PRs)
 
 - **2026-01-16** #4 Update for Node v24
 - **2026-01-16** #5 Update to trigger Github Actions
 - **2026-01-16** #6 Fix .github folder
 
-### docker-block-web-ci-builder (3 PRs)
+#### docker-block-web-ci-builder (3 PRs)
 
 - **2026-01-16** #3 Prepare for Node v24 update
 - **2026-01-16** #4 Update dependencies for Node24
 - **2026-01-16** #5 Update
 
-### block-cli (2 PRs)
+#### block-cli (2 PRs)
 
 - **2024-02-14** #22 Remove github actions
 - **2024-02-27** #23 Add db-creds command
 
-### docker-block-api (1 PRs)
+#### docker-block-api (1 PRs)
 
 - **2026-01-16** #11 Update for Node v24
 
-### docker-block-admin-ci-builder (1 PRs)
+#### docker-block-admin-ci-builder (1 PRs)
 
 - **2026-01-16** #1 Update to Node 24.13.0
